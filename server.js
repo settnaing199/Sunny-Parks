@@ -11,9 +11,9 @@ app.use(express.json());
 let port = 3000;
 
 app.post('/parks', async (req, res) => {
-  const { lat, long, radius } = req.body;
+  const { lat, lng, radius } = req.body;
 
-  const parks = findParksWithinRadius(lat, long, radius);
+  const parks = findParksWithinRadius(lat, lng, radius);
   const parksWithWeather = await getWeatherForParks(parks);
   const bestParks = rankBestParks(parksWithWeather);
   res.send(bestParks);
