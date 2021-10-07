@@ -1,6 +1,6 @@
 const locations = require('./locations.json');
 const fetch = require('node-fetch');
-
+require('dotenv').config();
 /*
 find distance between two points(sphere) using Haversine Formula
 MIT open-source implmentation below
@@ -60,7 +60,7 @@ const getWeatherForParks = async (parks) => {
     let { lat, lng } = parks[i];
     parkswithWeatherData.push(
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=imperial&appid=b4bc98201ef4fbaca2e89f55e1553217`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=imperial&appid=${process.env.API_KEY}`
       )
         .then((res) => res.json())
         .then((data) => ({ park: parks[i], weather: data }))
