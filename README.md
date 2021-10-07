@@ -1,9 +1,9 @@
 # Sunny-Parks
 
-## API
+### API
 - express.js
 
-## Dev Setup
+### Dev Setup
 ```bash
 npm install
 npm run dev
