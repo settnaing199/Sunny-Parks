@@ -9,5 +9,5 @@ npm install
 npm run dev
 ```
 
-- api-backend will launch at: http://localhost:3000/parks
+- api-backend will launch at: http://localhost:3000/
 
