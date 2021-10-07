@@ -1,7 +1,13 @@
 # Sunny-Parks
+
+*API*
+- express.js
+
+## Dev Setup
 ```bash
-# react-client terminal 2
-cd client
 npm install
-npm start
+npm run dev
 ```
+
+- api-backend will launch at: http://localhost:3000/parks
+
