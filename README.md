@@ -15,5 +15,5 @@ npm run dev
 - endpoint /parks
 - must pass in lat, lng, radius as body
 - return ranked parks along with their temperature and weather conditions
-- temperature and weather conditions are used to created the ranking algorithms
+- temperature and weather conditions are used to created the ranking algorithm
 
